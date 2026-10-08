@@ -11,12 +11,6 @@ public class Main {
             System.out.println("Hello, World!");
             
         System.out.println(" CALCULADORA BASICA ");
-        System.out.println("Ingrese el primer numero: ");
-        double num1 = scanner.nextDouble();
-        
-        System.out.println("Ingrese el segundo numero: ");
-        double num2 = scanner.nextDouble();
-        
         System.out.println("Ingrese la operacion a realizar (+, -, *, /): ");
         System.out.println("1. suma (+)");
         System.out.println("2. resta (-)");
@@ -25,6 +19,22 @@ public class Main {
         System.out.println(" opcion 1, 2, 3 o 4: ");
             
         int opcion = scanner.nextInt();
+        
+		if (opcion < 1 || opcion > 4) {
+			System.out.println("Opcion invalida. Por favor, ingrese un numero entre 1 y 4.");
+			return;
+		}
+        
+        
+        
+        System.out.println("Ingrese el primer numero: ");
+        double num1 = scanner.nextDouble();
+        
+        System.out.println("Ingrese el segundo numero: ");
+        double num2 = scanner.nextDouble();
+        
+     
+
         
         double resultado = 0;
         boolean operacionValida = true;
